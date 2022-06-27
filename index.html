@@ -42,7 +42,7 @@
     <section class="main-section">
         <div class="container main-section-container">
         <h1 class="main-headerline">Эффективные решения <br>для вашего бизнеса</h1>
-        <button class="btn btn-main" type="button">Заказать услугу</button>
+        <button class="btn btn-main" type="button" data-modal-open>Заказать услугу</button>
     </div>
     </section>
     <section class="concepts">
@@ -91,9 +91,24 @@
             <div class="container work-container">
         <h2 class="work-headline headline">Чем мы занимаемся</h2>
         <ul class="work-list">
-            <li class="work-item list"><img class="work-img" src="./images/whatwedo1.jpg" alt="Работник печатает на клавиатуре" width="370" height="294"></li>
-            <li class="work-item list"><img class="work-img" src="./images/whatwedo2.jpg" alt="Работник рассматривает варианты мобильных версий" width="370" height="294"></li>
-            <li class="work-item list"><img class="work-img" src="./images/whatwedo3.jpg" alt="Работник выбирает цвет на палитре в планшете" width="370" height="294"></li>
+            <li class="work-item list">
+                <div class="work-item-top-wrapper">
+                <img class="work-img" src="./images/whatwedo1.jpg" alt="Работник печатает на клавиатуре" width="370" height="294">
+                <p class="work-item-top-text">Десктопные приложения</p>
+                </div>
+            </li>
+            <li class="work-item list">
+                <div class="work-item-top-wrapper">
+                <img class="work-img" src="./images/whatwedo2.jpg" alt="Работник рассматривает варианты мобильных версий" width="370" height="294">
+                <p class="work-item-top-text">Мобильные приложения</p>
+                </div>
+            </li>
+            <li class="work-item list">
+                <div class="work-item-top-wrapper">
+                <img class="work-img" src="./images/whatwedo3.jpg" alt="Работник выбирает цвет на палитре в планшете" width="370" height="294">
+                <p class="work-item-top-text">Дизайнерские решения</p>
+                </div>
+            </li>
         </ul>
     </div>
     </section>
@@ -349,6 +364,17 @@
         </div>
     </div>
     </footer>
+    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-button" type="button" data-modal-close>
+                <svg class="close-button-svg">
+                    <use href="./images/symbol-defs.svg#icon-close" width="11" height="11"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
     
 </body>
 </html>
